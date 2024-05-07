@@ -7,7 +7,7 @@ data = pd.read_csv("tips.csv")
 
 st.subheader("Visualisasi Dashboard")
 plt.scatter(data['day'], data['tip'], c=data['size'],
-            s=data["total_bill'])
+            s=data['total_bill'])
             
 plt.plot(data['tip'])
 plt.plot(data['size'])
