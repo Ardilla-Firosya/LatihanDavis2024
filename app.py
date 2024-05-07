@@ -1,26 +1,3 @@
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# Load data
-data = pd.read_csv("tips.csv")
-
-# Streamlit app
-st.title("Visualisasi Data")
-
-# Display the dataframe
-st.write("## Tips Data")
-st.write(data)
-
-# Bar chart
-st.write("## Bar Chart")
-plt.bar(data['day'], data['tip'])
-plt.title("Jumlah Tips Per Hari dengan bar Chart")
-plt.xlabel('Day')
-plt.ylabel('Tip')
-st.pyplot()
-
-# Note: Make sure to have the 'tips.csv' file in the same directory as this script
 
 import streamlit as st
 import pandas as pd
