@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("tips.csv")
 
 # Streamlit app
-st.title("Tips Analysis")
+st.title("Visualisasi Data")
 
 # Display the dataframe
 st.write("## Tips Data")
@@ -15,7 +15,7 @@ st.write(data)
 # Bar chart
 st.write("## Bar Chart")
 plt.bar(data['day'], data['tip'])
-plt.title("Bar Chart")
+plt.title("Jumlah Tips Per Hari dengan bar Chart")
 plt.xlabel('Day')
 plt.ylabel('Tip')
 st.pyplot()
@@ -39,7 +39,7 @@ st.write(data)
 # Scatter plot
 st.write("## Scatter Plot")
 plt.scatter(data['day'], data['tip'])
-plt.title("Scatter Plot")
+plt.title("Jumlah tip per hari dengan Scatter Plot")
 plt.xlabel('Day')
 plt.ylabel('Tip')
 st.pyplot()
